@@ -9,7 +9,12 @@ const Movie = props => {
       <p>{director}</p>
       {rate > 9.1 && <p>{rate}</p>}
       {hasOscars ? (
-        <p>This movie has been awarded an Oscar ⭐️</p>
+        <p>
+          This movie has been awarded an Oscar
+          <span role="img" aria-label="star emoji">
+            ⭐️
+          </span>
+        </p>
       ) : (
         <p>No Oscar here...</p>
       )}
